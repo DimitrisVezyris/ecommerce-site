@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+:root {
+    --bgc: #0490A9;
+    --fc: #0A0A0A;
+    --hbgc: #3E55BD;
+    --hc: #FFFFFF;
+    --nbgc: #7BAFD4;
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-size: 0.75rem;
+}
+p{
+    font-size: 0.65rem;
+}
+a{
+    box-shadow: 5px 3px 9px 2px rgba(123,175,212,0.81);
+} 
+button {
+    box-shadow: 5px 3px 9px 2px rgba(123,175,212,0.81);
+    margin: 0.5vmax;
+    padding: 1vmax;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 5px 3px 9px 2px #576fd7bf;
+    background-color: var(--hbgc);
+    color: var(--hc);
+}
+body {
+    margin:0;
+    background-color: var(--bgc);
+    color: var(--fc);
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden; /* Hide vertical scrollbar */
+}
+
+.navbar {
+    box-shadow: 5px 3px 9px 2px #8abee269;
+    display: flex;
+    flex-direction: row;
+    justify-content: right !important;
+    align-items: right;
+    background-color: var(--nbgc);
+    height: 10vh;
+    width: max-content !important;
+    min-width: 100vw;
+    padding-left: none !important;
+    padding-bottom: 1.1vh;
+    padding-right: 7vw;
+    position: relative;
+}
+.nleft{
+    padding: none !important;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    margin: none !important;
+}
+.nleft img{
+    min-width: 1vw;
+    min-height: 1.5vh;
+    position: left;
+    margin: none !important;
+}
+.empty{
+    width: 4%;
+}
+.rnav {
+    width: 60%;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: max-content;
+    display: flex;
+    align-items: right;
+    flex-direction: row-reverse;
+    font-size: 0.75rem;
+}
+.nleft a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--fc);
+}
+.nleft a:hover{
+    box-shadow: 5px 3px 9px 2px #576fd7bf;
+    background-color: var(--hbgc);
+    color: var(--hc);
+}
+.nright a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 2vw;
+    color: var(--fc);
+}
+.nright a:hover {
+    box-shadow: 5px 3px 9px 2px #576fd7bf;
+    background-color: var(--hbgc);
+    color: var(--hc);
+}
+.dropdown a{
+    display: block;
+    color: var(--fc);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown a:hover {
+    box-shadow: 5px 3px 9px 2px #576fd7bf;
+    background-color: var(--hbgc);
+    color: var(--hc);
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bgc);
+    color: var(--fc);
+    min-width: 150px;
+    box-shadow: 5px 3px 9px 2px rgba(123,175,212,0.81);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: var(--fc);
+    background-color: var(--nbgc);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 0.65rem;
+} 
+.dropdown-content a:hover {
+    box-shadow: 5px 3px 9px 2px #576fd7bf;
+    background-color: var(--hbgc);
+    color: var(--hc);
+}  
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+
+.maintop {
+    width: 96vw;
+    height: max-content;
+    display: grid;
+    grid: auto / 48vw 48vw;
+    margin-bottom: none;
+}
+.maintop img{
+    object-fit: contain;
+    width: 75%;
+    max-height: 75vh;
+    margin-right: 10vw;
+}
+.maintop h1{
+    font-size: 1.1rem;
+    margin: 2vw;
+}
+.maintop p{
+    margin: 2vw;
+}
+.maintxt{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+.maintop a{
+    font-size: 1.5rem;
+    box-shadow: 5px 3px 9px 2px rgba(205, 0, 51, 0.46);
+    background-color: #b3002d !important;
+    color: var(--hc);
+    margin: auto;
+    text-decoration: none !important;
+    border-color: var(--fc);
+    border-style: solid;
+    border-radius: 15px;
+    transition: all 0.65s ease-in;
+    transition: all 0.5s ease-out;
+    margin-top: 13vh;
+}
+.maintop a:hover{
+    font-size: 2rem;
+}
+
+#mainimg { 
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+}
+.card {
+    box-shadow: 5px 3px 9px 2px rgba(123,175,212,0.81);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 60vh;
+    width: 40vw;
+    margin: 2vw;
+    border-radius: 15px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transition: all 0.65s ease-in;
+    transition: all 0.5s ease-out;
+}
+.card:hover {
+    height: 60vh;
+    width: 40vw;
+    margin: 3vw;
+}
+.cardtxt {
+    box-shadow: none;
+    font-size: 1rem;
+    background-color: var(--bgc);
+    color: var(--fc);
+    margin: auto;
+    text-decoration: none;
+}
+.cardtxt:hover {
+    box-shadow: 5px 3px 9px 2px #576fd7bf;
+    background-color: var(--hbgc);
+    color: var(--hc);
+}
+
+.footer {
+    box-shadow: -3px -5px 9px 2px #8abee269;
+    background-color: var(--nbgc);
+    color: var(--fc);
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    height: max-content;
+    width: max-content !important;
+    min-width: 98.9vw;
+    font-size: 0.75rem;
+    padding-left: 0.15vw;
+}
+.footer a:hover{
+    box-shadow: 5px 3px 9px 2px #576fd7bf;
+    background-color: var(--hbgc);
+    color: var(--hc);
+}
+.footer a{
+    text-decoration: none;
+    color: var(--fc);
+}
+.fleft{
+    width: 35%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    max-width: 30vw;
+}
+.fleft img,a,input{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5vw;
+}
+.fright{
+    width: 50%;
+    margin-left: 7.5%;
+}
+.fright img:hover{
+    background-color: var(--hbgc);
+    color: var(--hc);
+}
+.fcolumns{
+    display: flex;
+    flex-direction: row;
+}
+.fcolumns div{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.fcolumn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fcolumn a{
+    font-size: 0.75rem;
+    text-align: center;
+}
+.fsocial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.fsocial img{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+table{
+    font-size: 0.65rem;
+}
